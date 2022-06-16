@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link rel="icon" type="image/x-icon" href="images/ticker-fav.png" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Twitter Ticker Live Preview API</title>
+    </head>
+    <body>
+        <header>
+            <div id="ticker">
+                <div id="headlines"></div>
+            </div>
+        </header>
+        <section>
+            <div id="tweetsApiImage" class="displayNone"></div>
+            <div id="loadingImage"></div>
+            <div id="previewsContainer" class="displayNone">
+                <h5 id="preview">
+                    <small>⟨</small>&emsp;TWEET LIVE PREVIEW&emsp; <small>/ &nbsp;⟩</small>
+                </h4>
+            </div>
+            <div id="overlay" class="displayNone">
+                <iframe id="myIframe" src="" frameborder="0" target="_parent"></iframe>
+            </div>
+            <button id="reloadPage"  class="displayNone" title="look for new tweets" onclick="location.reload();"></button>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
